@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+
+html {
+     box-sizing: border-box;
+}
+
+
+ html, body {
+     width: 100%;
+     height:100%;
+     margin: 0;
+     padding: 0;
+}
+
+
+ body {
+     background-image: url("../images/geometry2.png");
+     font-family: 'Coda', cursive;
+}
+
+
+/*under header h1 is mentioned*/
+ h1 {
+     font-family: sans-serif;
+     font-weight: 350;
+}
+
+
+/*under scores restart, moves-count and stars comes*/
+ .score {
+     text-align: left;
+     width: 350px;
+}
+
+
+ .restart {
+   float: right;
+     cursor: pointer;
+     margin-bottom: 10px;
+     padding-left: 155px;
+}
+
+
+ li {
+     list-style: none;
+     display: inline-block;
+}
+
+
+ .scores .stars {
+     padding: 0;
+     margin:0;
+     border: 5px;
+     display: inline-block;
+     margin: 0 5px 0 0;
+}
+
+
+/*it is the main box under which all the css styling has performed*/
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+}
+
+
+/* parebt box is a bix box under which all small boxes are placed. */
+ .parent-box {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: center;
+     border-radius: 9px;
+     width: 680px;
+     height:650px;
+     border: 1.5px solid;
+     margin: 0 0 6em;
+     padding: 20px;
+     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+}
+
+
+/* all the small boxes or cards*/
+ .box-cards {
+     width:110px;
+     height:95px;
+     border-radius: 7px;
+     border: 1px solid;
+     padding: 20px;
+     margin: 5px;
+     background-color: #2e3d49;
+     cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+.score {
+  width: 50%;
+  margin-left: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+.parent-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 450px;
+  height:450px;
+}
+.box-cards {
+  width: 40px;
+  height: 40px;
+  display: flex;
+justify-content: center;
+}
+.items {
+  font-size: 30px;
+  text-align: center;
+}
+}
+
+
+@media screen and (min-width: 600px) {
+.items  {
+  font-size:50px;
+  text-align: center;
+}
+}
+
+
+ .items {
+     display: none ;
+     text-align: center;
+}
+
+
+/*to start the time when user click on the boxes*/
+ .timer {
+     display: none;
+     background-color: #2d3436;
+     color: #dfe6e9;
+     margin-bottom: 10px;
+}
